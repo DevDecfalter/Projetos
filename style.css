@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-*{
+* {
   padding: 0;
   margin: 0;
   outline: none;
@@ -9,98 +9,140 @@
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    background-color: #333;
-  }
-  
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 2rem;
-  }
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #333;
+}
 
-  div .container p{
-    margin-bottom: 2rem;
-  }
-  
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 2rem;
+}
+
+.container {
+  width: 80%;
+  margin: 5px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+p {
+  text-align: justify;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffcc00; 
+}
+
+#portfolio {
+  background-color: #f0f8ff;
+  padding: 10px 0;
+}
+
+.project {
+  margin-bottom: 40px;
+  margin: 10px;
+  width: auto;
+}
+
+.project img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.project h3 {
+  margin-top: 10px;
+}
+
+.project p {
+  color: #555;
+}
+
+.project a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.project a:hover {
+  background-color: #ffcc00; 
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+}
+
+footer a {
+  color: #ffcc00; 
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+
+@media only screen and (max-width: 768px) {
   .container {
-    width: 80%;
-    margin: 5px auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  h1, h2 {
-    margin: 0;
+    flex-direction: column;
+    text-align: center;
   }
 
-  p {
+  body {
     text-align: justify;
   }
-  
+
+  nav {
+    margin-top: 20px;
+  }
+
   nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
+    flex-direction: column;
   }
-  
+
   nav li {
-    margin-right: 20px;
+    margin: 0 0 10px 0;
   }
-  
-  nav a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    transition: color 0.3s ease;
+
+  #portfolio .container {
+    text-align: center;
   }
-  
-  nav a:hover {
-    color: #ffcc00; /* Cor destacada ao passar o mouse */
-  }
-  
-  #portfolio {
-    background-color: #f0f8ff;
-    padding: 10px 0;
-  }
-  
+
   .project {
-    margin-bottom: 40px;
-    margin: 10px;
-    width: auto;
-  }
-  
-  .project img {
-    max-width: 100%;
-    height: auto;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-  }
-  
-  .project h3 {
-    margin-top: 10px;
-  }
-  
-  .project p {
-    color: #555;
-  }
-  
-  .project a {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 8px 16px;
-    background-color: #333;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 4px;
-  }
-  
-  .project a:hover {
-    background-color: #ffcc00; /* Cor destacada ao passar o mouse */
+    text-align: center;
   }
 
   footer {
@@ -108,60 +150,13 @@ body {
     color: #fff;
     padding: 5px;
   }
-  
+
   footer a {
-    color: #ffcc00; /* Cor destacada para links no rodapé */
+    color: #ffcc00; 
     text-decoration: none;
   }
-  
+
   footer a:hover {
     text-decoration: underline;
   }
-  
-  /* Adicionando responsividade */
-  @media only screen and (max-width: 768px) {
-    .container {
-      flex-direction: column;
-      text-align: center;
-    }
-
-    body {
-      text-align: justify;
-    }
-  
-    nav {
-      margin-top: 20px;
-    }
-  
-    nav ul {
-      flex-direction: column;
-    }
-  
-    nav li {
-      margin: 0 0 10px 0;
-    }
-  
-    #portfolio .container {
-      text-align: center;
-    }
-  
-    .project {
-      text-align: center;
-    }
-
-    footer {
-      background-color: #333;
-      color: #fff;
-      padding: 5px;
-    }
-    
-    footer a {
-      color: #ffcc00; /* Cor destacada para links no rodapé */
-      text-decoration: none;
-    }
-    
-    footer a:hover {
-      text-decoration: underline;
-    }
-  }
-  
+}
