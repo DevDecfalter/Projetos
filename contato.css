@@ -22,6 +22,14 @@ header {
   padding: 10px 0;
 }
 
+nav > ul > li > a {
+  color: #7fffd4;
+}
+
+nav > ul > li > a:hover {
+  color: #3b7461;
+}
+
 header h1 {
   font-size: 24px;
 }
@@ -71,13 +79,18 @@ footer a {
 }
 
 /* Estilos Adicionais para o Rodapé */
-footer p {
+footer {
   margin: 0;
+}
+
+footer a {
+  color: #7fffd4;
 }
 
 footer a:hover {
   text-decoration: underline;
 }
+
     @media only screen and (max-width: 768px) {
       .container {
         flex-direction: column;
